@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Business Homepage One</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__left">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            aria-label="Search"
+            placeholder="Search"
+          />
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="header__right">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__left">
+          <img
+            src="https://www.pngmart.com/files/8/Thinking-Woman-Download-PNG-Image.png"
+            title="Girl with white dress"
+          />
+        </div>
+        <div class="hero__right">
+          <p>
+            We combine local knowledge with global expertise, strategy with
+            design, empathy with creativity, meaning with magic. Reach out to
+            discuss how we might help you accelerate change.
+          </p>
+          <p>Duis aute irure dolor in reprehenderit</p>
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h1>We Are World Best It Solution Company</h1>
+        <div x-data="main">
+          <template x-for="feature in features">
+            <div>
+              <i class="fa" :class="feature.icon"></i>
+              <h3 x-text="feature.title"></h3>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <section class="phone">
+      <div class="container">
+        <h3>Call to ask any question: <span>111-111-1111</span></h3>
+      </div>
+    </section>
+
+    <section class="course">
+      <div class="container">
+        <h3>Secretarial Courses</h3>
+        <p>
+          There are only some symptoms such as dizziness, depression, and
+          collapse that appear while the VR experience. The technology is still
+          new and requires investigation and research.
+        </p>
+
+        <div>
+          <div>
+            <img
+              src="https://www.pngmart.com/files/10/User-Account-Person-PNG-Photos.png"
+              alt=""
+            />
+            <p>
+              Sample text. Click to select the text box. Click again or double
+              click to start editing the text. Duis aute irure dolor.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://www.pngmart.com/files/10/User-Account-Person-PNG-Photos.png"
+              alt=""
+            />
+            <p>
+              Sample text. Click to select the text box. Click again or double
+              click to start editing the text. Duis aute irure dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="container">
+        <div x-data="main">
+          <template x-for="card in cards">
+            <div>
+              <p x-text="card.number"></p>
+              <h3 x-text="card.title"></h3>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <div class="team__left">
+          <h3>Meet the Team</h3>
+          <p>
+            The result of our company branding process is a comprehensive brand
+            guideline that can be used to design a and other design assets like
+            brand illustrations that reflect the new brand.
+          </p>
+        </div>
+        <div class="team__right">
+          <img
+            src="https://www.pngmart.com/files/10/User-Account-Person-PNG-Photos.png"
+            alt=""
+          />
+          <img
+            src="https://www.pngmart.com/files/10/User-Account-Person-PNG-Photos.png"
+            alt=""
+          />
+          <img
+            src="https://www.pngmart.com/files/10/User-Account-Person-PNG-Photos.png"
+            alt=""
+          />
+          <img
+            src="https://www.pngmart.com/files/10/User-Account-Person-PNG-Photos.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsors"></section>
+
+    <section class="contact"></section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; Copyright 2022 Lorem Ipsum. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
