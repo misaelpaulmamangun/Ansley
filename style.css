@@ -62,8 +62,13 @@ header > div > .header__left > input {
   outline-width: 0;
 }
 
+header > div > .header__left > i {
+  cursor: pointer;
+}
+
 header > div > .header__right > i {
   font-size: 30px;
+  cursor: pointer;
 }
 
 /* Hero Banner */
@@ -254,4 +259,65 @@ footer {
 footer > .container > p {
   text-align: center;
   color: var(--text-white);
+}
+
+/* Media Queries */
+
+/* Extra small */
+@media (max-width: 575.98px) {
+  .phone > .container > h3 {
+    display: grid;
+  }
+
+  .course > .container > div > div {
+    flex-direction: column;
+  }
+
+  .team > .container {
+    grid-template-columns: 1fr;
+  }
+
+  .team > .container > .team__left {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Small */
+@media (max-width: 767.98px) {
+  .hero > .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero > .container > .hero__left {
+    display: none;
+  }
+
+  .hero > .container > .hero__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features > .container > div {
+    grid-template-columns: 1fr;
+  }
+
+  .cards > .container > div {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium */
+@media (max-width: 991.98px) {
+}
+
+/* Large */
+@media (max-width: 1199.98px) {
+}
+
+/* Extra-Large */
+@media (max-width: 1399.98px) {
 }
