@@ -52,17 +52,23 @@ header > div {
 }
 
 header > div > .header__left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header > div > .header__left > div {
   border: 1px solid var(--border-color);
   padding-right: 0.5rem;
 }
 
-header > div > .header__left > input {
+header > div > .header__left > div > input {
   padding: 0.5rem;
   border: none;
   outline-width: 0;
 }
 
-header > div > .header__left > i {
+header > div > .header__left > div > i {
   cursor: pointer;
 }
 
