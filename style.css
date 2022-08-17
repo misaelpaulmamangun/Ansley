@@ -57,6 +57,11 @@ header > div > .header__left {
   gap: 2rem;
 }
 
+header > div > .header__left > b {
+  text-transform: uppercase;
+  font-size: larger;
+}
+
 header > div > .header__left > div {
   border: 1px solid var(--border-color);
   padding-right: 0.5rem;
@@ -291,6 +296,10 @@ footer > .container > p {
 
 /* Small */
 @media (max-width: 767.98px) {
+  header .header__left > div {
+    display: none;
+  }
+
   .hero > .container {
     grid-template-columns: 1fr;
   }
