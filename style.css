@@ -57,9 +57,10 @@ header > div > .header__left {
   gap: 2rem;
 }
 
-header > div > .header__left > b {
+header > div > .header__left > strong {
   text-transform: uppercase;
   font-size: larger;
+  cursor: pointer;
 }
 
 header > div > .header__left > div {
@@ -73,11 +74,11 @@ header > div > .header__left > div > input {
   outline-width: 0;
 }
 
-header > div > .header__left > div > i {
+header > div > .header__left > div > em {
   cursor: pointer;
 }
 
-header > div > .header__right > i {
+header > div > .header__right > em {
   font-size: 30px;
   cursor: pointer;
 }
@@ -149,7 +150,7 @@ header > div > .header__right > i {
   padding: 2rem;
 }
 
-.features > .container > div > div > i {
+.features > .container > div > div > em {
   font-size: 40px;
   color: var(--main-color);
 }

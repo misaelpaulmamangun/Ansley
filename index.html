@@ -19,7 +19,7 @@
     <header>
       <div class="container">
         <div class="header__left">
-          <b>Ansley</b>
+          <strong>Ansley</strong>
           <div>
             <input
               type="text"
@@ -28,11 +28,11 @@
               aria-label="Search"
               placeholder="Search"
             />
-            <i class="fa fa-search"></i>
+            <em class="fa fa-search"></em>
           </div>
         </div>
         <div class="header__right">
-          <i class="fa fa-bars"></i>
+          <em class="fa fa-bars"></em>
         </div>
       </div>
     </header>
@@ -45,6 +45,7 @@
             width="100%"
             height="100%"
             title="Girl with white dress"
+            alt="Girl smiling"
           />
         </div>
         <div class="hero__right">
@@ -65,7 +66,7 @@
         <div x-data="main">
           <template x-for="feature in features">
             <div>
-              <i class="fa" :class="feature.icon"></i>
+              <em class="fa" :class="feature.icon"></em>
               <h3 x-text="feature.title"></h3>
             </div>
           </template>
