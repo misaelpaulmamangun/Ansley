@@ -1,0 +1,45 @@
+.team {
+  padding: 2rem 0;
+}
+
+.team > .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.team > .container > .team__right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.team > .container > .team__right > img {
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+}
+
+/* Footer */
+footer {
+  padding: 0.5rem;
+  background-color: var(--secondary-color);
+}
+
+footer > .container > p {
+  text-align: center;
+  color: var(--text-white);
+}
+
+@media (max-width: 575.98px) {
+  .team > .container {
+    grid-template-columns: 1fr;
+  }
+
+  .team > .container > .team__left {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}

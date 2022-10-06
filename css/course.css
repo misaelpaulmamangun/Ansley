@@ -1,0 +1,36 @@
+.course {
+  padding: 2rem 0;
+}
+
+.course > .container > h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.course > .container > p {
+  text-align: center;
+}
+
+.course > .container > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.course > .container > div > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.course > .container > div > div > img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 575.98px) {
+  .course > .container > div > div {
+    flex-direction: column;
+  }
+}

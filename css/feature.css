@@ -1,0 +1,37 @@
+.features {
+  background-color: var(--section-color);
+  padding: 2rem 0;
+}
+
+.features > .container > h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.features > .container > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.features > .container > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-white);
+  padding: 2rem;
+}
+
+.features > .container > div > div > em {
+  font-size: 40px;
+  color: var(--main-color);
+}
+
+@media (max-width: 767.98px) {
+  .features > .container > div {
+    grid-template-columns: 1fr;
+  }
+}

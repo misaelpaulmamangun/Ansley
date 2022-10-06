@@ -1,0 +1,52 @@
+header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 0.5rem;
+  background-color: var(--text-white);
+  position: sticky;
+  top: 0;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div > .header__left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header > div > .header__left > strong {
+  text-transform: uppercase;
+  font-size: larger;
+  cursor: pointer;
+}
+
+header > div > .header__left > div {
+  border: 1px solid var(--border-color);
+  padding-right: 0.5rem;
+}
+
+header > div > .header__left > div > input {
+  padding: 0.5rem;
+  border: none;
+  outline-width: 0;
+}
+
+header > div > .header__left > div > em {
+  cursor: pointer;
+}
+
+header > div > .header__right > em {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  header .header__left > div {
+    display: none;
+  }
+}
